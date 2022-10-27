@@ -1,0 +1,10 @@
+Assuming a = 5, b = 4, c = 3, indicate whether each of the following conditions
+resolve to true or false:
+
+
+a) (a < b) False
+b) (a != b) True
+c) (a > b) and (a < c) False
+d) (a > b) or (a < c)
+e) (a – 1 == b)
+f) not(b > c)
