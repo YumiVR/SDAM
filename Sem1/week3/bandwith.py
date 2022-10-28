@@ -11,5 +11,5 @@ while program_validity ==  "false":
 	except:
 		print ("Unexpected error, Try Again!")
 
-Usersbps = UserMbpsInput * 1000000
+Userbps = UserMbpsInput * 1000000
 print ("Your Bandwith in bps is", Userbps)
