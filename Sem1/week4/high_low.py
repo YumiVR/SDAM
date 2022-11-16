@@ -90,7 +90,7 @@ while valid == "false": #this while loop lets the program re-run till the user c
 			cardnum = random.randint(1, 13)
 			cardsuitnum = random.randint(1, 4)
 
-#creating a menu that is apeeling 
+#creating a menu that is apeeling to the user
 
 			print ("")
 			print ("          Card Number        ")
@@ -99,20 +99,24 @@ while valid == "false": #this while loop lets the program re-run till the user c
 			print ("")
 				
 
-			user_guess = int(input("Higher or Lower? >"))
+			user_guess = int(input("Higher or Lower? >")) #asking the user fot their guess 
 			
-			if user_guess == 1:
-				user_guess = cardnum + 1
-			elif user_guess == 2:
-				user_guess = cardnum - 1
+#working out if higher or lower
+	
+			if user_guess == 1: #checking if the users input was 1
+				user_guess = cardnum + 1 #changing the users guess to the old card + 1
 
-			if user_guess > cardnum:
-				print ("Congratulations, You Win! ")
+			elif user_guess == 2: #checking if the users input was 2
+				user_guess = cardnum - 1 #changing the users guess to the old card - 1
+
+			if user_guess > cardnum: #comparison for win
+				print ("Congratulations, You Win! ") 
 			elif user_guess < cardnum:
-				print ("Sorry, You Loose! ")
+				print ("Sorry, You Loose! ") #comparison for loose
 
 
 #-------------------------------------------------------------------------------------
 
+#error message
 	except:
 		print ("Error Detected, Shutting Down!")
