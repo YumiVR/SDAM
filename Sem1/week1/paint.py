@@ -1,4 +1,4 @@
-import math
+cimport math
 
 #Defining Variables of PaintCan 
 diameter_paint = 15 #cm
