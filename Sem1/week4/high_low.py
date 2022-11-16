@@ -29,7 +29,7 @@ while valid == "false": #this while loop lets the program re-run till the user c
 	
 #-------------------------------------------------------------------------------------
 
-#Defining 
+#Setting the Random Numbers to the Suit's
 
 	try:
 		if cardsuitnum == 1:
@@ -43,6 +43,8 @@ while valid == "false": #this while loop lets the program re-run till the user c
 
 #-------------------------------------------------------------------------------------
 
+#Displaying the Random Numbers to the Name's of the cards and adding the Suit
+
 		if cardnum == 1:
 			print ("Your Card is Ace", cardsuit)
 		elif cardnum == 11:
@@ -53,27 +55,42 @@ while valid == "false": #this while loop lets the program re-run till the user c
 			print ("Your card is King", cardsuit)
 		else:
 			print ("Your card is",cardnum, cardsuit)
-		print ("Guess higher or lower, or new card?")
-		menu = input("(t) for try and guess (n) for new card (x) to exit >")
-
+		
 #-------------------------------------------------------------------------------------
+
+#Displaying a menu for the user to choose their next action
+
+			print ("Guess higher or lower, or new card?")
+			menu = input("(t) for try and guess (n) for new card (x) to exit >")
+
+#if the user inpus "n" the program will generate a new card
 
 		if menu == ("n"):
 			print ()
 		
+# if the user inputs "x" the program will exit 
+
 		elif menu == ("x"):
-			print ("Shutting Down Safely!")
 			print ("Thankyou for using High_Low.py")
+			time.sleep(1)
+			print ("Shutting Down Safely!")
 			break
 
 #-------------------------------------------------------------------------------------
 
+#if the user inputs "t" the program will start the sequance of setting up variables for the guess
+
+
 		elif menu == ("t"):
-			old_card = cardnum 
-			old_suit = cardsuit
+			old_card = cardnum #storing the old card to memory 
+			old_suit = cardsuit # storing the old Suit to memory
+
+#Generating new cards
 
 			cardnum = random.randint(1, 13)
 			cardsuitnum = random.randint(1, 4)
+
+#creating a menu that is apeeling 
 
 			print ("")
 			print ("          Card Number        ")
