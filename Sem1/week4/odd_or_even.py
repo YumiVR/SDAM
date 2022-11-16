@@ -1,7 +1,7 @@
 import sys
 program_valid = "false"
+line = "--------------------------------------"
 while program_valid == "false":
-line = ("--------------------------------------")
 
 	try:
 		print (line)
