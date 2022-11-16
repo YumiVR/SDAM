@@ -29,6 +29,8 @@ while valid == "false": #this while loop lets the program re-run till the user c
 	
 #-------------------------------------------------------------------------------------
 
+#Defining 
+
 	try:
 		if cardsuitnum == 1:
 			cardsuit = "of Diamonds"
@@ -75,28 +77,22 @@ while valid == "false": #this while loop lets the program re-run till the user c
 
 			print ("")
 			print ("          Card Number        ")
-			print ("            1 = Ace          ")
-			print (" 2 = 10 are the card numbers ")
-			print ("           11 = Jack         ")
-			print ("           12 = Queen        ")
-			print ("           13 = King         ")
-			print ("")
-
-			print ("            Card Suit        ")
-			print ("          1 = Diamonds       ")
-			print ("          2 = Spades         ")
-			print ("          3 = Clubs          ")
-			print ("          4 = Hearts         ")
+			print ("           1 = Higher        ")
+			print ("           2 = Lower         ")
 			print ("")
 				
 
-			user_guess1 = int(input("Guess the new card nuber? >"))
-			user_guess2 = int(input("Guess the new card suit? >"))
+			user_guess = int(input("Higher or Lower? >"))
+			
+			if user_guess == 1:
+				user_guess = cardnum + 1
+			elif user_guess == 2:
+				user_guess = cardnum - 1
 
-			if user_guess1 == old_card & user_guess2 == old_suit:
-				print ("Congragts you win")
-			else:
-				print ("You loose")
+			if user_guess > cardnum:
+				print ("Congratulations, You Win! ")
+			elif user_guess < cardnum:
+				print ("Sorry, You Loose! ")
 
 
 #-------------------------------------------------------------------------------------
