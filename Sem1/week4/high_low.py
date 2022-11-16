@@ -117,6 +117,6 @@ while valid == "false": #this while loop lets the program re-run till the user c
 
 #-------------------------------------------------------------------------------------
 
-#error message
+#error message 
 	except:
 		print ("Error Detected, Shutting Down!")
