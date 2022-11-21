@@ -3,6 +3,8 @@ import sys
 import random
 import time 
 
+line = "-----------------------------------------------------------------"
+
 #valid is a variable that we have to let the program loop till the user chooses to exit.
 valid = "false"
 
@@ -113,6 +115,9 @@ while valid == "false": #this while loop lets the program re-run till the user c
 				print ("Congratulations, You Win! ") 
 			elif user_guess < cardnum:
 				print ("Sorry, You Loose! ") #comparison for loose
+			print ("The card was the", cardnum, cardsuit)
+			time.sleep(1)
+			print (line)
 
 
 #-------------------------------------------------------------------------------------
