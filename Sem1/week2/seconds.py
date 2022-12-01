@@ -1,4 +1,3 @@
-from tabulate import tabulate
 
 valid = 'false'
 while valid == 'false':
