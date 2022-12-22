@@ -1,14 +1,14 @@
 #define varibles
-valid = "false"
+valid = False
 callrate = 0.15
 vat=0.2
 
 #asking user how long the call was with error handeling
-while valid == "false":
+while not valid:
 	try:
 		time_mins = int(input("How long was the call: "))
-		valid = "true"
-	except:
+		valid = True
+	except ValueError:
 		print ("An unexpected error occurred")
 
 #calculating price of call without vat
