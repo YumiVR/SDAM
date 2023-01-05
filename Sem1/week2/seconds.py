@@ -1,4 +1,4 @@
-
+import tabulate
 valid = 'false'
 while valid == 'false':
 	try:
