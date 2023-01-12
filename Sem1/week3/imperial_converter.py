@@ -1,10 +1,10 @@
 #error handeling
-valid = "false"
-while valid  == "false":
+valid = False
+while not valid:
 	try:
 		feet = int(input("Input height in Feet: "))
 		inches = int(input("Input height in Inches: "))
-		valid = "true"
+		valid = True
 
 
 	except:
