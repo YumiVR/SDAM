@@ -5,9 +5,6 @@ import time
 
 line = "-----------------------------------------------------------------"
 
-#valid is a variable that we have to let the program loop till the user chooses to exit.
-valid = "false"
-
 #-------------------------------------------------------------------------------------
 
 
@@ -24,7 +21,7 @@ cardsuitnum = random.randint(1, 4) #generate what suit it will be
 print ("Welcome to High_Low.py")
 time.sleep(1)
 
-while valid == "false": #this while loop lets the program re-run till the user chooses to quit. 
+while True: #this while loop lets the program re-run till the user chooses to quit. 
 	
 	cardnum = random.randint(1, 13)
 	cardsuitnum = random.randint(1, 4)
