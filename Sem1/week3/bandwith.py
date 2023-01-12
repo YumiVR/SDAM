@@ -1,8 +1,7 @@
 import sys
 import math
-program_validity = "false"
 
-while program_validity ==  "false":
+while True:
 	try:
 		UserMbpsInput =  int(input("Input Bandwith limit in Mbps: "))
 		UsersRequired = int(input("Input Users Required: "))
