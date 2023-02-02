@@ -1,17 +1,17 @@
 import math
 
 #error handeling
-valid = "false"
+valid = False
 
 #getting users inputs
-while valid == "false":
+while not valid:
 	try:
 		intvelo = int(input("Input Initial Velocity: "))
 		timetaken = int(input("Input Time Taken: "))
 		accel = int(input("Input Acceleration: "))
 
 		#setting valid to true to breake from the while
-		valid = "true"
+		valid = True
 	except:
 		print ("An unexpected error occured, please try again. ")
 

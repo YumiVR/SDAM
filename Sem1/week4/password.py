@@ -1,27 +1,27 @@
 
 # Password Entry
 
-valid = "false"
+valid = False
 
-while valid == "false":
+while not valid:
 	try:
 		passwd_stored = str(input("Enter a new password: "))
-		valid = "true"
+		valid = True
 	
 	except:
 		print("Invalid In put, Try again!")
 
 # Password Checking
 
-passcheck = "false"
+passcheck = False
 
-while passcheck == "false":
+while not passcheck:
 	try:
 		passwd_entered = input("Please input your password: ")
 		
 		if passwd_entered == passwd_stored:
 			print ("Welcome User")
-			passcheck = "true"
+			passcheck = True
 
 		else:
 			print ("Wrong password, Try Again!")	

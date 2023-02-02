@@ -1,9 +1,9 @@
 import tabulate
-valid = 'false'
-while valid == 'false':
+valid = False
+while not valid:
 	try:
 		userseconds = int(input("Input amount of positive secconds: "))
-		valid = 'true'
+		valid = True
 		
 	except:
 		print ("Invalid input, Try again please! ")

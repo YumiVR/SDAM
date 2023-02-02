@@ -1,13 +1,10 @@
 import sys
 
-program_validity = 0
 print ("Type 'help' for a list of commands")
 
 
-
-while program_validity == 0:
+while True:
 	try:
-		
 		usermenu = input(">")
 
 		if usermenu == 'help':
@@ -27,7 +24,7 @@ while program_validity == 0:
 			for inital in fn:
 				print(inital[0], inital[])	
 				print("")
-				break			
+				break
 	except:
 		print("try again!")
 
