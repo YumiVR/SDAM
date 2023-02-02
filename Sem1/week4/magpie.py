@@ -2,8 +2,6 @@ import sys
 print ("welcome to the program")
 print ("press enter to exit the program")
 
-valid = "false"
-
 song = {
 	1 : "One for Sorrow",
 	2 : "Two for Joy",
@@ -14,8 +12,7 @@ song = {
 	7 : "Seven for a secret never to be to"
 }
 
-while valid == "false":
-
+while True:
 	try:
 		print(song[int(input("Enter a number: "))])
 	except:

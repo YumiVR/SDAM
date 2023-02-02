@@ -1,3 +1,4 @@
+
 def convert_to_time(seconds):
     # Calculate the number of hours by dividing the total seconds by 3600 (the number of seconds in an hour)
     hours = seconds // 3600

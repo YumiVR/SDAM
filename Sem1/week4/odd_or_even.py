@@ -1,7 +1,7 @@
 import sys
-program_valid = "false"
+program_valid = False
 line = "--------------------------------------"
-while program_valid == "false":
+while not program_valid:
 
 	try:
 		print (line)
@@ -11,29 +11,27 @@ while program_valid == "false":
 
 		if usermenu == 1:
 
-			valid = "false"
+			valid = False
 
-			while valid == "false":
+			while not valid:
 				try:
 					print (line)
 					UserInterger = int(input("Input a Number please: "))
-					valid = "false"
+					valid = False
 
+					print (line)
+					valid = True
 					if (UserInterger % 2) == 0:
-						print (line)
 						print ("The number is even")
-						valid = "true"
 					else:
-						print (line)
 						print ("The provided number is odd")
-						valid = "true"
 				except:
 					print (line)
 					print ("Invalid input, Try again")
 
 
 		elif usermenu == 2:
-			program_valid = "true"
+			program_valid = True
 			print (line)
 			break
 
