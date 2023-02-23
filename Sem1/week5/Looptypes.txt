@@ -1,0 +1,19 @@
+Just a Word document is required for this task. 
+State whether each of the following is deterministic, non-deterministic or either (ie could be solved deterministically or non-deterministically) and justify your choice: 
+
+
+a) writing Christmas cards to family – Deterministic repetitive task that can be done in a specific order and is not subject to randomness.
+
+b) washing up - Deterministic repetitive, done in a specific order and is not random 
+
+c) reading a book – both as you can read a book start to end or can skip pages making it non-derterministic
+
+d) waiting for someone to answer the phone – Non-Deterministic with a lot of external factors e.g. busy?
+
+e) counting to 10 in French – Deterministic, you either know 1 – 10 in French or you dont
+
+f) playing a game of 501 in darts - do not know
+
+g) laying the table for a dinner party – Deterministic as task with a set of steps that can be done in a specific order
+
+h) answering this question - Deterministic as task with a set of steps that can be done in a specific order
